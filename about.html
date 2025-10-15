@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Ahmed Raza Women's Mart</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --green: #00a86b;
+      --pink: #ff4fa1;
+    }
+
+    .about-hero {
+  background: 
+    linear-gradient(to right, rgba(255, 237, 244, 0.8), rgba(241, 255, 243, 0.8)), /* lighter gradient overlay */
+    url("images/about-banner.jpg"); /* your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 3px solid var(--green);
+}
+
+
+    .about-hero h1 {
+      color: var(--green);
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .about-hero p {
+      color: #555;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .about-content {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-content img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text h2 {
+      color: var(--pink);
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      color: #333;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Fancy heading for highlights section */
+    .about-highlights {
+      background: #fff8fb;
+      padding: 60px 20px;
+      text-align: center;
+      border-top: 2px solid var(--green);
+      border-bottom: 2px solid var(--green);
+    }
+
+    .fancy-heading {
+      text-align: center;
+      margin-bottom: 35px;
+      position: relative;
+    }
+
+    .fancy-heading h2 {
+      color: var(--pink);
+      font-size: 2.3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #ff4fa1, #00c281);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .underline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .underline span {
+      width: 70px;
+      height: 4px;
+      border-radius: 6px;
+      background: linear-gradient(90deg, #00c281, #ff80b0);
+      box-shadow: 0 0 10px rgba(255, 128, 176, 0.5);
+    }
+
+    .underline .sparkle {
+      font-size: 1.3rem;
+      animation: sparkleTwinkle 1.5s infinite ease-in-out;
+    }
+
+    @keyframes sparkleTwinkle {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+
+    .highlight-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .highlight {
+      background: white;
+      border: 1px solid #ffd6eb;
+      border-radius: 15px;
+      padding: 25px;
+      width: 280px;
+      transition: all 0.3s ease;
+    }
+
+    .highlight:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    .highlight h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .highlight p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer */
+    .site-footer {
+      background: linear-gradient(135deg, #00985f, #007b48);
+      color: #fff;
+      padding: 56px 20px 18px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+
+    .footer-left h2 {
+      margin-bottom: 6px;
+    }
+
+    .footer-middle a, .footer-right a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 18px;
+      color: #d4f6e8;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 12px;
+    }
+
+    @media(max-width:700px){
+      .footer-container { text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">🌿 Ahmed Raza Women's Mart</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="mobileToggle" class="mobile-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <h1>About Ahmed Raza Women's Mart</h1>
+    <p>Pakistan’s first and only mart exclusively designed for women — a safe, respectful, and comfortable shopping experience for every lady.</p>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <div class="about-text">
+      <h2>🌸 A Mart by Women, for Women</h2>
+      <p>
+        Ahmed Raza Women's Mart was created with one beautiful purpose — to give women a space where they can shop freely, comfortably, and confidently.
+        Here, only women are allowed — from customers to helpers and cashiers.  
+        Whether you're a working woman, a housewife, or a student, you’ll find a safe, clean, and welcoming environment.
+      </p>
+      <p>
+        Women who observe hijab or feel shy interacting with men can now enjoy a stress-free shopping experience.
+        From groceries to daily essentials, everything is managed by women — for women.
+      </p>
+      <p>
+        We invite all sisters, mothers, and daughters to visit and support this unique step toward women’s independence.
+        Share this mart with your friends and family so every woman can shop with dignity and peace of mind.
+      </p>
+    </div>
+
+    <div class="about-img">
+      <img src="images/womens.jpg" alt="Women Shopping at Ahmed Raza Mart" />
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="about-highlights">
+    <div class="fancy-heading">
+      <h2>Why Women Love Us 💖</h2>
+      <div class="underline">
+        <span></span>
+        <i class="sparkle">✨</i>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="highlight-boxes">
+      <div class="highlight">
+        <h3>👩‍🦰 Women-Only Environment</h3>
+        <p>No gents, no stress — a mart fully operated and managed by women.</p>
+      </div>
+      <div class="highlight">
+        <h3>🛍️ Comfortable Shopping</h3>
+        <p>Friendly female staff to assist you with every product and query.</p>
+      </div>
+      <div class="highlight">
+        <h3>🌿 Safe & Clean Space</h3>
+        <p>Hygienic aisles, peaceful environment, and respectful service for every lady.</p>
+      </div>
+      <div class="highlight">
+        <h3>💬 Women-to-Women Guidance</h3>
+        <p>Discuss your needs easily — no hesitation, just comfort and care.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <div class="footer-left">
+        <h2>Ahmed Raza Women's Mart 🛒</h2>
+        <p>Private — women-only shopping. Rashan essentials delivered with care.</p>
+      </div>
+
+      <div class="footer-middle">
+        <h3>📍 Location</h3>
+        <p>Landhi No 6, Karachi, Pakistan</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Landhi+No+6+Karachi" target="_blank">Open in Google Maps</a>
+      </div>
+
+      <div class="footer-right">
+        <h3>📞 Contact</h3>
+        <p>Phone: <a href="tel:+923331292325">+92 333 1292325</a></p>
+        <p>Email: <a href="mailto:info@ahmedrazawomensmart.com">info@ahmedrazawomensmart.com</a></p>
+        <p>Hours: Mon–Sat 9:00 — 18:00</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year"></span> Ahmed Raza Women's Mart — All Rights Reserved.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const nav = document.querySelector('.nav');
+    mobileToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

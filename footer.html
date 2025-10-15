@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="footer-container container">
+    <div class="footer-left">
+      <h2>Ahmed Raza Women's Mart 🛒</h2>
+      <p>Private — women-only shopping. Rashan essentials delivered with care.</p>
+    </div>
+
+    <div class="footer-middle">
+      <h3>📍 Location</h3>
+      <p>Landhi No 6, Karachi, Pakistan</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=Landhi+No+6+Karachi" target="_blank">Open in Google Maps</a>
+    </div>
+
+    <div class="footer-right">
+      <h3>📞 Contact</h3>
+      <p>Phone: <a href="tel:+923331292325">+92 333 1292325</a></p>
+      <p>Email: <a href="mailto:info@ahmedrazawomensmart.com">info@ahmedrazawomensmart.com</a></p>
+      <p>Hours: Mon–Sat 9:00 — 18:00</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>&copy; <span id="year"></span> Ahmed Raza Women's Mart — All Rights Reserved.</p>
+  </div>
+
+  <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>
+
+  <style>
+  .site-footer{ background:linear-gradient(135deg,#00985f,#007b48); color:#fff; padding:56px 20px 18px; border-radius:10px; margin-top:40px;}
+  .footer-container{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; align-items:start; }
+  .footer-left h2{ margin-bottom:6px; }
+  .footer-middle a, .footer-right a{ color:#fff; text-decoration:none; font-weight:600; }
+  .footer-bottom{ text-align:center; margin-top:18px; color:#d4f6e8; font-size:0.95rem; border-top:1px solid rgba(255,255,255,0.08); padding-top:12px; }
+  @media(max-width:700px){ .footer-container { text-align:center; } }
+  </style>
+</footer>

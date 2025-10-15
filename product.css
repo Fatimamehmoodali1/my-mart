@@ -1,0 +1,241 @@
+/* Product Page Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8fb;
+  color: #333;
+}
+
+/* ===== HEADER STYLING (Same as index.html) ===== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: linear-gradient(90deg, #007b48, #ff69b4);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.container {
+  width: min(1200px, 94%);
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 6px;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.nav a:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-3px);
+}
+
+/* Mobile toggle */
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+}
+
+/* Responsive header */
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 58px;
+    background: linear-gradient(90deg, #007b48, #ff69b4);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  .nav.open {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.product-image img {
+  width: 450px;
+  height: 420px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+.product-details {
+  max-width: 400px;
+}
+
+.product-details h2 {
+  color: #ff4da6;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #2ecc71;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #ff4da6;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(255, 77, 166, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+/* Map Section */
+.map-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ffebf0 0%, #e6ffe6 100%);
+}
+
+.map-section h2 {
+  font-size: 28px;
+  color: #ff4da6;
+  margin-bottom: 10px;
+}
+
+.map-section p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-container iframe {
+  width: 80%;
+  height: 350px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Footer */
+/* .footer {
+  background-color: #ffb6c1;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-weight: 500;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+} */
+
+ /* Footer */
+    .site-footer {
+      background: linear-gradient(135deg, #00985f, #007b48);
+      color: #fff;
+      padding: 56px 20px 18px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+
+    .footer-left h2 {
+      margin-bottom: 6px;
+    }
+
+    .footer-middle a, .footer-right a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 18px;
+      color: #d4f6e8;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 12px;
+    }
+
+    @media(max-width:700px){
+      .footer-container { text-align:center; }
+    }
+  

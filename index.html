@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ahmed Raza Women's Mart — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">🌿 Ahmed Raza Women's Mart</div>
+
+      <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button id="mobileToggle" class="mobile-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content container">
+        <div class="hero-text">
+          <h1>Fresh Essentials Delivered Safely — For Women Only</h1>
+          <p>Ahmed Raza Women's Mart — Landhi No 6, Karachi. Private, respectful shopping for women. Rashan essentials only (Chawal, Masalay, Oil, Dryfruits, Honey).</p>
+          <div class="hero-cta">
+            <a href="#featured" class="hero-btn" id="shopNow">Shop Now</a>
+            <a href="about.html" class="hero-btn secondary">Why Us</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/banner.jpg" alt="Banner — Ahmed Raza Women's Mart" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Essentials -->
+  <section id="featured" class="products container">
+    <h2 class="section-title">Featured Essentials</h2>
+    <p class="section-sub">Rashan essentials — carefully curated for our women customers.</p>
+
+    <!-- <div class="filters">
+      <button data-filter="all" class="filter-btn active">All</button>
+      <button data-filter="Chawal" class="filter-btn">Chawal</button>
+      <button data-filter="Masalay" class="filter-btn">Masalay</button>
+      <button data-filter="Oil" class="filter-btn">Oil</button>
+      <button data-filter="Dryfruits" class="filter-btn">Dryfruits</button>
+    </div> -->
+
+    <div class="product-grid" id="productGrid">
+      <!-- Product cards: add/replace images and text as needed -->
+      <article class="product-card" data-category="Chawal">
+        <img src="images/Basmati-Rice.avif" alt="Premium Basmati Rice" loading="lazy" />
+        <h3>Premium Basmati Rice</h3>
+        <p class="price">Rs 2,500 / 10kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Premium Basmati Rice"
+           data-price="2500"
+           data-img="images/Basmati-Rice.avif"
+           data-category="Chawal"
+           data-desc="Finest quality Basmati rice — long grains, excellent aroma. Perfect for daily meals.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Chawal">
+        <img src="images/wahite-flour.png" alt="white-flour" loading="lazy" />
+        <h3>wahite-flour</h3>
+        <p class="price">Rs 880.00/ 10kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="White-Flour 10kg"
+           data-price="880.00"
+           data-img="images/wahite-flour.png"
+           data-category="white-flour"
+           data-desc="High-quality White Flour made from carefully selected wheat grains. Ultra-fine texture, soft, and perfect for making bakery items, naans, parathas, and snacks. Hygienically packed to preserve purity and freshness.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Chawal">
+        <img src="images/chana.avif" alt="Chana (white) 1kg" loading="lazy" />
+        <h3>chana</h3>
+        <p class="price">Rs 2,500 / 10kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Chana (white) 1kg"
+           data-price="300.00"
+           data-img="images/chana.avif"
+           data-category="chana"
+           data-desc="Premium Chana (Chickpeas), rich in protein and fiber. Fresh and naturally sun-dried for superior taste. Ideal for curries, snacks, and healthy meals.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Chawal">
+        <img src="images/mashdal.jpg" alt="Mash Daal 1kg" loading="lazy" />
+        <h3>Daal</h3>
+        <p class="price">Rs 2,500 / 10kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mash Daal 1kg"
+           data-price="380.00"
+           data-img="images/mashdal.jpg"
+           data-category="Daal"
+           data-desc="Pure and fresh Mash Dal, known for its creamy texture and rich flavor. 100% natural and packed with protein — ideal for preparing dal fry, dosas, and delicious curries.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/garmmsala.webp" alt="Garam Masala" loading="lazy" />
+        <h3>Garam Masala 100g</h3>
+        <p class="price">Rs 200</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Garam Masala 100g"
+           data-price="200"
+           data-img="images/garmmsala.webp"
+           data-category="Masalay"
+           data-desc="Premium Garam Masala — perfectly balanced spices for biryani & curry.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Oil">
+        <img src="images/olive-oil.jpg" alt="Olive Oil 400ml" loading="lazy" />
+        <h3>Olive Oil 400ml</h3>
+        <p class="price">Rs 1,200</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Olive Oil 400ml"
+           data-price="1200"
+           data-img="images/olive-oil.jpg"
+           data-category="Oil"
+           data-desc="Cold-pressed olive oil — healthy cooking & skin care.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="All">
+        <img src="images/almonds.jpg" alt="Almonds 1kg" loading="lazy" />
+        <h3>Almonds 1kg</h3>
+        <p class="price">Rs 1,000</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Almonds 1kg"
+           data-price="1000"
+           data-img="images/almonds.jpg"
+           data-category="Dryfruits"
+           data-desc="Premium almonds — fresh, nutritious and crunchy.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="All">
+        <img src="images/besan.jpg" alt="Besan (Gram Flour) 1kg" loading="lazy" />
+        <h3>besan 1kg</h3>
+        <p class="price">Rs 1,000</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Besan (Gram Flour) 1kg"
+           data-price="280.00"
+           data-img="images/besan.jpg"
+           data-category="besan"
+           data-desc="Freshly milled, perfect for pakoras & sweets.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="All">
+        <img src="images/kala-chana.webp" alt="Black Chana (Kala Chana) 1kg" loading="lazy" />
+        <h3>kala-chana 1kg</h3>
+        <p class="price">Rs 1,000</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Black Chana (Kala Chana) 1kg"
+           data-price="330.00"
+           data-img="images/kala-chana.webp"
+           data-category="kala-chana 1kg"
+           data-desc="High-quality Black Chana packed with protein and nutrients. Naturally dried and perfect for curries, salads, and healthy snacks.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Maida">
+        <img src="images/maida.jpg" alt="maida" loading="lazy" />
+        <h3>Maida</h3>
+        <p class="price">Rs 650</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Maida 1kg"
+           data-price="350"
+           data-img="images/maida.jpg"
+           data-category="Maida"
+           data-desc="High-quality Black Chana packed with protein and nutrients. Naturally dried and perfect for curries, salads, and healthy snacks.">
+           View Details
+        </a>
+      </article>
+
+      <!-- Add more product cards as needed -->
+    </div>
+  </section>
+
+  <!-- Footer (loaded from footer.html) -->
+  <div id="footer"></div>
+
+  <script>
+    // Smooth scroll for Shop Now
+    document.getElementById('shopNow').addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('featured').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // Mobile toggle (simple)
+    const mobileToggle = document.getElementById('mobileToggle');
+    const nav = document.querySelector('.nav');
+    mobileToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    // Filter functionality (buttons)
+    function setActiveFilter(filter) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+      document.querySelectorAll('.product-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+          card.classList.add('reveal'); // animation
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setActiveFilter(btn.dataset.filter);
+      });
+    });
+
+    // Also support header category links
+    document.querySelectorAll('.nav .nav-link[data-filter]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const f = link.dataset.filter || 'all';
+        setActiveFilter(f);
+        document.getElementById('featured').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // View Details: save product data to localStorage then navigate
+    document.querySelectorAll('.view-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const productData = {
+          name: btn.dataset.name,
+          price: btn.dataset.price,
+          img: btn.dataset.img,
+          category: btn.dataset.category,
+          desc: btn.dataset.desc
+        };
+        localStorage.setItem('selectedProduct', JSON.stringify(productData));
+        // navigate to product page (href will handle it). keep small timeout for safety.
+        setTimeout(() => { window.location = btn.getAttribute('href'); }, 50);
+      });
+    });
+
+    // load footer.html
+    fetch('footer.html').then(r=>r.text()).then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+</body>
+</html>

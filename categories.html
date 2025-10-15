@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Categories - Ahmed Raza Women's Mart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌿 Ahmed Raza Women's Mart</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="categories.html" class="active">Categories</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section style="padding:60px 0">
+    <div class="container">
+      <h2 style="text-align:center;color:var(--green-dark);margin-bottom:20px">Categories</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px">
+        <a class="cat-card" data-cat="Grains" href="index.html#productsSection">Chawal</a>
+        <a class="cat-card" data-cat="Masala" href="index.html#productsSection">Masalay</a>
+        <a class="cat-card" data-cat="Oils" href="index.html#productsSection">Oil</a>
+        <a class="cat-card" data-cat="Dry Fruits" href="index.html#productsSection">Dry Fruits</a>
+        <a class="cat-card" data-cat="Honey" href="index.html#productsSection">Honey</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html").then(r=>r.text()).then(t=>document.getElementById('footer').innerHTML=t);
+
+    // when clicking category link, we want index.html to filter and scroll
+    document.querySelectorAll('.cat-card').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const cat = a.getAttribute('data-cat');
+        // store selection and go to index
+        localStorage.setItem('categoryScrollTo', cat);
+        window.location.href = 'index.html#productsSection';
+      });
+    });
+
+    // on load — if run on index, script.js handles the stored category (see below)
+  </script>
+</body>
+</html>
+
+<style>
+.cat-card{display:block;padding:40px;border-radius:12px;background:#fff;border:1px solid #f2f2f2;text-decoration:none;color:var(--green-dark);font-weight:700;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.04);transition:transform .18s}
+.cat-card:hover{transform:translateY(-6px)}
+</style>
