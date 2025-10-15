@@ -24,6 +24,7 @@
       background: linear-gradient(180deg, #fff, #fff9fc);
     }
 
+
     .contact h2 {
       text-align: center;
       font-size: 2rem;
@@ -130,6 +131,7 @@
   <section class="contact">
     <div class="container">
       <h2>Get in Touch 🌸</h2>
+
       <div class="contact-grid">
         <div class="contact-card">
           <h3>We’d Love to Hear from You 💕</h3>
@@ -151,6 +153,14 @@
     fetch("footer.html")
       .then(r => r.text())
       .then(t => document.getElementById("footer").innerHTML = t);
+
+    // ✅ Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const nav = document.querySelector('.nav');
+    if (mobileToggle && nav) {
+      mobileToggle.addEventListener('click', () => nav.classList.toggle('open'));
+    }
+
   </script>
 </body>
 </html>
