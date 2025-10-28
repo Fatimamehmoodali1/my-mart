@@ -41,18 +41,65 @@
     </div>
   </section>
 
+
+  <!-- 🌟 Special Products Section -->
+  <section id="special-products" class="special-products container">
+    <h2 class="section-title">Special Products</h2>
+    <p class="section-sub">Our most popular and premium items — selected just for you!</p>
+
+    <div class="special-products-wrapper">
+      <button class="scroll-btn left" id="scrollLeft">❮</button>
+      <div class="special-products-scroll" id="specialScroll">
+        <div class="special-card">
+          <img src="images/special-figerchips-masala.png" alt="Organic Honey" />
+          <h3>FingerChipss Masala</h3>
+          <p class="price">Rs. 160</p>
+        </div>
+
+        <div class="special-card">
+          <img src="images/special-korma-masala.png" alt="Olive Oil" />
+          <h3>Korma Masala</h3>
+          <p class="price">Rs. 160</p>
+        </div>
+
+        <div class="special-card">
+          <img src="images/special-chat-masala.png" alt="Olive Oil" />
+          <h3>Chaat Masala</h3>
+          <p class="price">Rs. 160</p>
+        </div>
+
+        <div class="special-card">
+          <img src="images/special-pulao-masala.png" alt="Basmati Rice" />
+          <h3>Pulao Masala</h3>
+          <p class="price">Rs. 160</p>
+        </div>
+
+        <div class="special-card">
+          <img src="images/special-rice.png" alt="Almonds" />
+          <h3>Biryani Masala</h3>
+          <p class="price">Rs. 160</p>
+        </div>
+      </div>
+      <button class="scroll-btn right" id="scrollRight">❯</button>
+    </div>
+  </section>
+
+
   <!-- Featured Essentials -->
   <section id="featured" class="products container">
     <h2 class="section-title">Featured Essentials</h2>
     <p class="section-sub">Rashan essentials — carefully curated for our women customers.</p>
 
-    <!-- <div class="filters">
-      <button data-filter="all" class="filter-btn active">All</button>
-      <button data-filter="Chawal" class="filter-btn">Chawal</button>
-      <button data-filter="Masalay" class="filter-btn">Masalay</button>
-      <button data-filter="Oil" class="filter-btn">Oil</button>
-      <button data-filter="Dryfruits" class="filter-btn">Dryfruits</button>
-    </div> -->
+  <!-- 🔽 Category Filter Section Added -->
+    <div class="category-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Daal">Daal</button>
+      <button class="filter-btn" data-filter="Masalay">Masalay</button>
+      <button class="filter-btn" data-filter="Chawal">Chawal</button>
+      <button class="filter-btn" data-filter="Dry Fruits">Dry Fruits</button>
+      <button class="filter-btn" data-filter="Oil / Ghee">Oil / Ghee</button>
+      <button class="filter-btn" data-filter="General">General Items</button>
+    </div>
 
     <div class="product-grid" id="productGrid">
       <!-- Product cards: add/replace images and text as needed -->
@@ -71,7 +118,7 @@
         </a>
       </article>
 
-      <article class="product-card" data-category="Chawal">
+      <article class="product-card" data-category="All">
         <img src="images/wahite-flour.png" alt="white-flour" loading="lazy" />
         <h3>wahite-flour</h3>
         <p class="price">Rs 880.00/ 10kg</p>
@@ -80,44 +127,196 @@
            data-name="White-Flour 10kg"
            data-price="880.00"
            data-img="images/wahite-flour.png"
-           data-category="white-flour"
+           data-category="All"
            data-desc="High-quality White Flour made from carefully selected wheat grains. Ultra-fine texture, soft, and perfect for making bakery items, naans, parathas, and snacks. Hygienically packed to preserve purity and freshness.">
            View Details
         </a>
       </article>
 
-      <article class="product-card" data-category="Chawal">
-        <img src="images/chana.avif" alt="Chana (white) 1kg" loading="lazy" />
-        <h3>chana</h3>
-        <p class="price">Rs 2,500 / 10kg</p>
+      <article class="product-card" data-category="Daal">
+        <img src="images/chana.avif" alt="White Chana" loading="lazy" />
+        <h3>White Chana</h3>
+        <p class="price">Rs 380 / kg</p>
         <a class="btn view-btn" 
            href="product.html"
            data-name="Chana (white) 1kg"
-           data-price="300.00"
+           data-price="380 / kg"
            data-img="images/chana.avif"
-           data-category="chana"
+           data-category="Daal"
            data-desc="Premium Chana (Chickpeas), rich in protein and fiber. Fresh and naturally sun-dried for superior taste. Ideal for curries, snacks, and healthy meals.">
            View Details
         </a>
       </article>
 
-      <article class="product-card" data-category="Chawal">
-        <img src="images/mashdal.jpg" alt="Mash Daal 1kg" loading="lazy" />
-        <h3>Daal</h3>
-        <p class="price">Rs 2,500 / 10kg</p>
+      <article class="product-card" data-category="Daal">
+        <img src="images/mashdal.jpg" alt="Mash Ki Daal (Split Urad / Dhuli Urad — White)" loading="lazy" />
+        <h3>Mash Ki Daal (Split Urad / Dhuli Urad — White)</h3>
+        <p class="price">Rs 420 / kg</p>
         <a class="btn view-btn" 
            href="product.html"
-           data-name="Mash Daal 1kg"
-           data-price="380.00"
+           data-name="Mash Ki Daal (Split Urad / Dhuli Urad — White)"
+           data-price="420 / kg"
            data-img="images/mashdal.jpg"
            data-category="Daal"
-           data-desc="Pure and fresh Mash Dal, known for its creamy texture and rich flavor. 100% natural and packed with protein — ideal for preparing dal fry, dosas, and delicious curries.">
+           data-desc="Creamy texture; dal makhani/junkar dishes mein use. Protein-rich.">
            View Details
         </a>
       </article>
 
-      <article class="product-card" data-category="Masalay">
-        <img src="images/garmmsala.webp" alt="Garam Masala" loading="lazy" />
+      <article class="product-card" data-category="Daal">
+        <img src="images/Masoor-Dal.jpg" alt="Masoor Dal (Split Red Lentils)" loading="lazy" />
+        <h3>Masoor Dal (Split Red Lentils)</h3>
+        <p class="price">Rs 320 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Masoor Dal (Split Red Lentils)"
+           data-price="320 / kg"
+           data-img="images/Masoor-Dal.jpg"
+           data-category="Daal"
+           data-desc="Quick-cooking red lentils, soft texture; dals, soups, khichdi ke liye ideal.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/Masoor-Sabut-(Whole Masoor- Brown Lentils).webp" alt="Masoor Sabut (Whole Masoor / Brown Lentils)" loading="lazy" />
+        <h3>Masoor Sabut (Whole Masoor / Brown Lentils)</h3>
+        <p class="price">Rs 280 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Masoor Sabut (Whole Masoor / Brown Lentils)"
+           data-price="280 / kg"
+           data-img="images/Masoor-Sabut-(Whole Masoor- Brown Lentils).webp"
+           data-category="Daal"
+           data-desc="Thodi firm, whole lentil — salads, pulao ya slow-cooked recipes mein use hoti hai.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/Moong-Dal-(Split-Yellow-Moong-Dhuli Moong).webp" alt="Moong Dal (Split Yellow Moong / Dhuli Moong)" loading="lazy" />
+        <h3>Moong Dal (Split Yellow Moong / Dhuli Moong)</h3>
+        <p class="price">Rs 360 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Moong Dal (Split Yellow Moong / Dhuli Moong)"
+           data-price="360 / kg"
+           data-img="images/Moong-Dal-(Split-Yellow-Moong-Dhuli Moong).webp"
+           data-category="Daal"
+           data-desc="Halke aur sehatmand; easily digestible — bachon aur bimar logon ke liye best. Khichri, dal tadka, soups.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/Moong-Sabut-green" alt="Moong Sabut (Whole Green Moong)" loading="lazy" />
+        <h3>Moong Sabut (Whole Green Moong)</h3>
+        <p class="price">Rs 320 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Moong Sabut (Whole Green Moong)"
+           data-price="320 / kg"
+           data-img="images/Moong-Sabut-green"
+           data-category="Daal"
+           data-desc="Sprouting aur slow-cooking ke liye; crunchy texture agar lightly roast/boil kiya jaye.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/Mash-Sabut-(Whole-Black-Urad-Kala-Mash).webp" alt="Mash Sabut (Whole Black Urad / Kala Mash)" loading="lazy" />
+        <h3>Mash Sabut (Whole Black Urad / Kala Mash)</h3>
+        <p class="price">Rs 450 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mash Sabut (Whole Black Urad / Kala Mash)"
+           data-price="450 / kg"
+           data-img="images/Mash-Sabut-(Whole-Black-Urad-Kala-Mash).webp"
+           data-category="Daal"
+           data-desc="Whole black lentil — slow-cooked gravies aur traditional recipes ke liye.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/chana-dal.webp" alt="Mash Sabut (Whole Black Urad / Kala Mash)" loading="lazy" />
+        <h3>Chana Dal (Split Chickpeas / Bengal Gram)</h3>
+        <p class="price">Rs 350 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Chana Dal (Split Chickpeas / Bengal Gram)"
+           data-price="350 / kg"
+           data-img="images/chana-dal.webp"
+           data-category="Daal"
+           data-desc="Thick, slightly nutty taste — bhujia, dal fry, sweets aur snacks mein use.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/kala-chana.webp" alt="Mash Sabut (Whole Black Urad / Kala Mash)" loading="lazy" />
+        <h3>Kala Chana (Black Chickpeas / Whole Chana)</h3>
+        <p class="price">Rs 350 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kala Chana (Black Chickpeas / Whole Chana)"
+           data-price="320 / kg"
+           data-img="images/kala-chana.webp"
+           data-category="Daal"
+           data-desc="Firm texture; curries aur chaat ke liye popular. Soak karke use hoti hai.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/toor.webp" alt="Mash Sabut (Whole Black Urad / Kala Mash)" loading="lazy" />
+        <h3>Toor Dal / Arhar Dal</h3>
+        <p class="price">Rs 250 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Toor Dal / Arhar Dal"
+           data-price="220 / kg"
+           data-img="images/toor.webp"
+           data-category="Daal"
+           data-desc="South-Asian staple — dal tadka aur everyday dals ke liye; mildly sweet flavor.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/monf-chilka.webp" alt="Mash Sabut (Whole Black Urad / Kala Mash)" loading="lazy" />
+        <h3>Moong Chilka (Moong with skin)</h3>
+        <p class="price">Rs 250 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Moong Chilka (Moong with skin)"
+           data-price="220 / kg"
+           data-img="images/monf-chilka.webp"
+           data-category="Daal"
+           data-desc="Slightly chewier than dhuli moong; soups, sprouting, and healthy dishes.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Daal">
+        <img src="images/lobia-blackeye.jpg" alt="Mash Sabut (Whole Black Urad / Kala Mash)" loading="lazy" />
+        <h3>Lobia / Black-eyed Peas</h3>
+        <p class="price">Rs 300 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Lobia / Black-eyed Peas"
+           data-price="300 / kg"
+           data-img="images/lobia-blackeye.jpg"
+           data-category="Daal"
+           data-desc="Curry aur salads mein use; protein-rich.">
+           View Details
+        </a>
+      </article>
+
+
+
+      <article class="product-card" data-category="All">
+        <img src="images/garmmsala.webp" alt="All" loading="lazy" />
         <h3>Garam Masala 100g</h3>
         <p class="price">Rs 200</p>
         <a class="btn view-btn" 
@@ -125,28 +324,103 @@
            data-name="Garam Masala 100g"
            data-price="200"
            data-img="images/garmmsala.webp"
-           data-category="Masalay"
+           data-category="All"
            data-desc="Premium Garam Masala — perfectly balanced spices for biryani & curry.">
            View Details
         </a>
       </article>
 
-      <article class="product-card" data-category="Oil">
-        <img src="images/olive-oil.jpg" alt="Olive Oil 400ml" loading="lazy" />
-        <h3>Olive Oil 400ml</h3>
-        <p class="price">Rs 1,200</p>
+      <article class="product-card" data-category="Oil / Ghee">
+        <img src="images/Dalda-Cooking-Oil.jpg" alt="Olive Oil 400ml" loading="lazy" />
+        <h3>Dalda Cooking Oil / Ghee</h3>
+        <p class="price">₨ 640 for 1 L</p>
         <a class="btn view-btn" 
            href="product.html"
-           data-name="Olive Oil 400ml"
-           data-price="1200"
-           data-img="images/olive-oil.jpg"
-           data-category="Oil"
-           data-desc="Cold-pressed olive oil — healthy cooking & skin care.">
+           data-name="Dalda Cooking Oil"
+           data-price="₨ 640 for 1 L"
+           data-img="images/Dalda-Cooking-Oil.jpg"
+           data-category="Oil / Ghee"
+           data-desc="Established brand, available in various volumes; widely used.">
            View Details
         </a>
       </article>
 
-      <article class="product-card" data-category="All">
+      <article class="product-card" data-category="Oil / Ghee">
+        <img src="images/Habib-Cooking-Oil.jpg" alt="Olive Oil 400ml" loading="lazy" />
+        <h3>Habib Cooking Oil / Ghee</h3>
+        <p class="price">₨ 650 for 1 L</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Habib Cooking Oil"
+           data-price="₨ 650 for 1 L"
+           data-img="images/Habib-Cooking-Oil.jpg"
+           data-category="Oil / Ghee"
+           data-desc="Another popular vegetable oil brand in Pakistan.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Oil / Ghee">
+        <img src="images/Sufi-Cooking-Oil.jfif" alt="Olive Oil 400ml" loading="lazy" />
+        <h3>Sufi Canola / Sunflower Oil / Ghee</h3>
+        <p class="price">₨ 620 for 1 L</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Sufi Canola / Sunflower Oil"
+           data-price="₨ 620 for 1 L"
+           data-img="images/Sufi-Cooking-Oil.jfif"
+           data-category="Oil / Ghee"
+           data-desc="Canola or sunflower oil variant, promoted as healthier choice.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Oil / Ghee">
+        <img src="images/Rafhan-Cooking-Oil.jpg" alt="Olive Oil 400ml" loading="lazy" />
+        <h3>Rafhan Cooking Oil / Ghee</h3>
+        <p class="price">₨ 999 for 1 L</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Rafhan Cooking Oil"
+           data-price="₨ 999 for 1 L"
+           data-img="images/Rafhan-Cooking-Oil.jpg"
+           data-category="Oil / Ghee"
+           data-desc="Corn oil variant, used for frying and general cooking.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Oil / Ghee">
+        <img src="images/Tullo-Cooking-Oil.jfif" alt="Olive Oil 400ml" loading="lazy" />
+        <h3>Tullo Cooking Oil / Ghee</h3>
+        <p class="price">₨ 550-600 for 1 L</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Tullo Cooking Oil"
+           data-price="₨ 550-600 for 1 L"
+           data-img="images/Tullo-Cooking-Oil.jfif"
+           data-category="Oil / Ghee"
+           data-desc="Budget-friendly cooking oil brand; common in many households">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Oil / Ghee">
+        <img src="images/Mezan-Cooking-Oil.jfif" alt="Olive Oil 400ml" loading="lazy" />
+        <h3>Mezan Royal Cooking Oil / Ghee</h3>
+        <p class="price">₨ 559 for 1 L</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mezan Royal Cooking Oil"
+           data-price="₨ 559 for 1 L"
+           data-img="images/Mezan-Cooking-Oil.jfif"
+           data-category="Oil / Ghee"
+           data-desc="Blend of canola, sunflower & soybean oils, enriched with vitamins.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
         <img src="images/almonds.jpg" alt="Almonds 1kg" loading="lazy" />
         <h3>Almonds 1kg</h3>
         <p class="price">Rs 1,000</p>
@@ -155,8 +429,278 @@
            data-name="Almonds 1kg"
            data-price="1000"
            data-img="images/almonds.jpg"
-           data-category="Dryfruits"
+           data-category="Dry Fruits"
            data-desc="Premium almonds — fresh, nutritious and crunchy.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Akhrot.jfif" alt="Akhrot (Walnuts - Without Shell)" loading="lazy" />
+        <h3>Akhrot (Walnuts - Without Shell)</h3>
+        <p class="price">Rs 2200</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Akhrot (Walnuts - Without Shell)"
+           data-price="2200"
+           data-img="images/Akhrot.jfif"
+           data-category="Dry Fruits"
+           data-desc="Brain-shaped nuts rich in omega-3">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/peanut.webp" alt="Mash Sabut (Whole Black Urad / Kala Mash)" loading="lazy" />
+        <h3>Mung Phali (Peanuts / Groundnuts)</h3>
+        <p class="price">Rs 800 / kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mung Phali (Peanuts / Groundnuts)"
+           data-price="300 / kg"
+           data-img="images/peanut.webp"
+           data-category="Dry Fruits"
+           data-desc="Usually sold as nut but also used as pulse — roasted or for oil extraction.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Chilgoza.webp" alt="Chilgoza (Pine Nuts)" loading="lazy" />
+        <h3>Chilgoza (Pine Nuts)</h3>
+        <p class="price">Rs 8000</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Chilgoza (Pine Nuts)"
+           data-price="8000"
+           data-img="images/Chilgoza.webp"
+           data-category="Dry Fruits"
+           data-desc="Expensive nut, very rich taste and aroma">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Kaju.jpg" alt="Kaju (Cashew Nuts - Whole)" loading="lazy" />
+        <h3>Kaju (Cashew Nuts - Whole)</h3>
+        <p class="price">Rs 3000</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kaju (Cashew Nuts - Whole)"
+           data-price="3000"
+           data-img="images/Kaju.jpg"
+           data-category="Dry Fruits"
+           data-desc="Soft, buttery texture, used in sweets">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Dry Fruit Mix.jpg" alt="Mewa Mix (Dry Fruit Mix)" loading="lazy" />
+        <h3>Mewa Mix (Dry Fruit Mix)</h3>
+        <p class="price">Rs 2800</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mewa Mix (Dry Fruit Mix)"
+           data-price="2800"
+           data-img="images/Dry Fruit Mix.jpg"
+           data-category="Dry Fruits"
+           data-desc="Almonds, pistachio, cashew & raisins combo">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/pistacio.jpg" alt="Pista (Pistachio - Iranian)" loading="lazy" />
+        <h3>Pista (Pistachio - Iranian)</h3>
+        <p class="price">Rs 3500</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Pista (Pistachio - Iranian)"
+           data-price="3500"
+           data-img="images/pistachio.jpg"
+           data-category="Dry Fruits"
+           data-desc="Premium quality, used in desserts and halwa">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Kishmish (Raisins - Green).webp" alt="Kishmish (Raisins - Green)" loading="lazy" />
+        <h3>Kishmish (Raisins - Green)</h3>
+        <p class="price">Rs 600</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kishmish (Raisins - Green)"
+           data-price="600"
+           data-img="images/Kishmish (Raisins - Green).webp"
+           data-category="Dry Fruits"
+           data-desc="Sweet and soft, used in desserts">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Kishmish (Black).webp" alt="Kishmish (Black)" loading="lazy" />
+        <h3>Kishmish (Black)</h3>
+        <p class="price">Rs 700</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kishmish (Black)"
+           data-price="700"
+           data-img="images/Kishmish (Black).webp"
+           data-category="Dry Fruits"
+           data-desc="Slightly tangy flavor, used in kheer & halwa">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Dried Blueberries.jpg" alt="Dried Blueberries" loading="lazy" />
+        <h3>Dried Blueberries</h3>
+        <p class="price">Rs 2,800</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dried Blueberries"
+           data-price="2,800"
+           data-img="images/Dried Blueberries.jpg"
+           data-category="Dry Fruits"
+           data-desc="Premium imported blueberries — perfect antioxidant snack.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Dried Cranberries.webp" alt="Dried Cranberries" loading="lazy" />
+        <h3>Dried Cranberries</h3>
+        <p class="price">Rs 1,800</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dried Cranberries"
+           data-price="1,800"
+           data-img="images/Dried Cranberries.webp"
+           data-category="Dry Fruits"
+           data-desc="Sweet-tart flavor, perfect for desserts or cereal topping.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Flax Seeds (Alsi).webp" alt="Flax Seeds (Alsi)" loading="lazy" />
+        <h3>Flax Seeds (Alsi)</h3>
+        <p class="price">Rs 800</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Flax Seeds (Alsi)"
+           data-price="800"
+           data-img="images/Flax Seeds (Alsi).webp"
+           data-category="Dry Fruits"
+           data-desc="High in omega-3 fatty acids — good for heart and skin health.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Chia Seeds.webp" alt="Chia Seeds" loading="lazy" />
+        <h3>Chia Seeds</h3>
+        <p class="price">Rs 2,000</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Chia Seeds"
+           data-price="2,000"
+           data-img="images/Chia Seeds.webp"
+           data-category="Dry Fruits"
+           data-desc="Superfood full of omega-3 and fiber — perfect for smoothies.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/sunflower seeds" alt="Sunflower Seeds" loading="lazy" />
+        <h3>Sunflower Seeds</h3>
+        <p class="price">Rs 1,400</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Sunflower Seeds"
+           data-price="1,400"
+           data-img="images/sunflower seeds"
+           data-category="Dry Fruits"
+           data-desc="Crunchy roasted sunflower seeds — great for salads or healthy snacks.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Pumpkin Seeds (Kadu ke Beej).webp" alt="Pumpkin Seeds (Kadu ke Beej)" loading="lazy" />
+        <h3>Pumpkin Seeds (Kadu ke Beej)</h3>
+        <p class="price">Rs 1,800</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Pumpkin Seeds (Kadu ke Beej)"
+           data-price="1,800"
+           data-img="images/Pumpkin Seeds (Kadu ke Beej).webp"
+           data-category="Dry Fruits"
+           data-desc="Clean roasted pumpkin seeds — full of zinc and healthy fats.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Dried-Plums-(Aloo-Bukhara).webp" alt="PuDried Plums (Aloo Bukhara)" loading="lazy" />
+        <h3>Dried Plums (Aloo Bukhara)</h3>
+        <p class="price">Rs 900</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dried Plums (Aloo Bukhara)"
+           data-price="900"
+           data-img="images/Dried-Plums-(Aloo-Bukhara).webp"
+           data-category="Dry Fruits"
+           data-desc="Tangy dried plums — used in chutneys and sharbat.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Apricots-(Khubani).webp" alt="Apricots (Khubani)" loading="lazy" />
+        <h3>Apricots (Khubani)</h3>
+        <p class="price">Rs 1,000</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Apricots (Khubani)"
+           data-price="1,000"
+           data-img="images/Apricots-(Khubani).webp"
+           data-category="Dry Fruits"
+           data-desc="Dried apricots from Hunza — naturally sweet and rich in vitamin A.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Coconut-Slices-(Nariyal).jpg" alt="Coconut Slices (Nariyal)" loading="lazy" />
+        <h3>Coconut Slices (Nariyal)</h3>
+        <p class="price">Rs 900</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Coconut Slices (Nariyal)"
+           data-price="900"
+           data-img="images/Coconut-Slices-(Nariyal).jpg"
+           data-category="Dry Fruits"
+           data-desc="Dried coconut slices — perfect for sweets, snacks, and garnishing.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Dry Fruits">
+        <img src="images/Khajoor.webp" alt="Khajoor" loading="lazy" />
+        <h3>Khajoor</h3>
+        <p class="price">Rs 700</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Khajoor"
+           data-price="700"
+           data-img="images/Khajoor.webp"
+           data-category="Dry Fruits"
+           data-desc="Locally grown, affordable and sweet">
            View Details
         </a>
       </article>
@@ -170,7 +714,7 @@
            data-name="Besan (Gram Flour) 1kg"
            data-price="280.00"
            data-img="images/besan.jpg"
-           data-category="besan"
+           data-category="All"
            data-desc="Freshly milled, perfect for pakoras & sweets.">
            View Details
         </a>
@@ -185,13 +729,13 @@
            data-name="Black Chana (Kala Chana) 1kg"
            data-price="330.00"
            data-img="images/kala-chana.webp"
-           data-category="kala-chana 1kg"
+           data-category="All"
            data-desc="High-quality Black Chana packed with protein and nutrients. Naturally dried and perfect for curries, salads, and healthy snacks.">
            View Details
         </a>
       </article>
 
-      <article class="product-card" data-category="Maida">
+      <article class="product-card" data-category="All">
         <img src="images/maida.jpg" alt="maida" loading="lazy" />
         <h3>Maida</h3>
         <p class="price">Rs 650</p>
@@ -200,8 +744,1659 @@
            data-name="Maida 1kg"
            data-price="350"
            data-img="images/maida.jpg"
-           data-category="Maida"
+           data-category="All"
            data-desc="High-quality Black Chana packed with protein and nutrients. Naturally dried and perfect for curries, salads, and healthy snacks.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/lux.webp" alt="maida" loading="lazy" />
+        <h3>Lux Soap</h3>
+        <p class="price">Rs 180</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Lux Soap"
+           data-price="180"
+           data-img="images/lux.webp"
+           data-category="General Items"
+           data-desc="Popular beauty soap with floral fragrance.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/safeguard.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Safeguard Soap</h3>
+        <p class="price">Rs 200</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Safeguard Soap"
+           data-price="200"
+           data-img="images/safeguard.jpg"
+           data-category="General Items"
+           data-desc="Antibacterial soap for germ protection.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/dettol.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dettol Soap</h3>
+        <p class="price">Rs 210</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dettol Soap"
+           data-price="210"
+           data-img="images/dettol.jfif "
+           data-category="General Items"
+           data-desc="Disinfectant soap for hygiene and protection.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/lifebouuy.jpeg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Lifebuoy Soap</h3>
+        <p class="price">Rs 180</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Lifebuoy Soap"
+           data-price="180"
+           data-img="images/lifebouuy.jpeg"
+           data-category="General Items"
+           data-desc="Strong antibacterial soap, ideal for daily use.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/dove.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dove Soap</h3>
+        <p class="price">Rs 250</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dove Soap"
+           data-price="250"
+           data-img="images/dove.webp"
+           data-category="General"
+           data-desc="Moisturizing cream soap for soft skin.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Palmolive-Soap.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Palmolive Soap</h3>
+        <p class="price">Rs 230</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Palmolive Soap"
+           data-price="230"
+           data-img="images/Palmolive-Soap.jpg"
+           data-category="General"
+           data-desc="Fragrant bath soap with natural oils.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/colgate.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Colgate Toothpaste (Red/MaxFresh)</h3>
+        <p class="price">Rs 300</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Colgate Toothpaste (Red/MaxFresh)"
+           data-price="300"
+           data-img="images/colgate.webp"
+           data-category="General"
+           data-desc="Cavity protection and fresh breath.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/sensodyne.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Sensodyne Toothpaste</h3>
+        <p class="price">Rs 400</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Sensodyne Toothpaste"
+           data-price="400"
+           data-img="images/sensodyne.webp"
+           data-category="General"
+           data-desc="For sensitive teeth and enamel care.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/sunsilk.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Sunsilk Shampoo</h3>
+        <p class="price">Rs 500</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Sunsilk Shampoo"
+           data-price="500"
+           data-img="images/sunsilk.jfif"
+           data-category="General"
+           data-desc="For smooth, strong, and shiny hair.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/head&shoulder.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Head & Shoulders</h3>
+        <p class="price">Rs 600</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Head & Shoulders"
+           data-price="600"
+           data-img="images/head&shoulder.webp"
+           data-category="General"
+           data-desc="Anti-dandruff shampoo.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Pantene-Shampoo.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Pantene Shampoo</h3>
+        <p class="price">Rs 550</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Pantene Shampoo"
+           data-price="550"
+           data-img="images/Pantene-Shampoo.webp"
+           data-category="General"
+           data-desc="Nourishing and repairing formula.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/L’Oreal-Elvive-Shampoo.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>L’Oreal Elvive Shampoo</h3>
+        <p class="price">Rs 900</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="L’Oreal Elvive Shampoo"
+           data-price="900"
+           data-img="images/L’Oreal-Elvive-Shampoo.jfif"
+           data-category="General"
+           data-desc="Professional repair & care shampoo.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Dove-Shampoo" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dove Shampoo</h3>
+        <p class="price">Rs 520</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dove Shampoo"
+           data-price="520"
+           data-img="images/Dove-Shampoo"
+           data-category="General"
+           data-desc="Moisture care for dry hair.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/clear-men.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Clear Men Shampoo</h3>
+        <p class="price">Rs 580</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Clear Men Shampoo"
+           data-price="580"
+           data-img="images/clear-men.jfif"
+           data-category="General"
+           data-desc="Anti-dandruff for men.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Surf-Excel.avif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Surf Excel</h3>
+        <p class="price">Rs 700/kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Surf Excel"
+           data-price="700/kg"
+           data-img="images/Surf-Excel.avif"
+           data-category="General"
+           data-desc="Powerful stain remover washing powder.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Ariel.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Ariel</h3>
+        <p class="price">Rs 680/kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Ariel"
+           data-price="680/kg"
+           data-img="images/Ariel.webp"
+           data-category="General"
+           data-desc="Deep clean detergent for bright clothes.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Brite.avif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Brite</h3>
+        <p class="price">Rs 600/kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Brite"
+           data-price="600/kg"
+           data-img="images/Brite.avif"
+           data-category="General"
+           data-desc="Budget-friendly washing powder.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Bonus-Tristar-surf.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Bonus Tristar</h3>
+        <p class="price">Rs 480/kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Bonus Tristar"
+           data-price="480/kg"
+           data-img="images/Bonus-Tristar-surf.jpg"
+           data-category="General"
+           data-desc="Economical detergent powder.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Express-Power-surf.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Express Power</h3>
+        <p class="price">Rs 400/kg</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Express Power"
+           data-price="400/kg"
+           data-img="images/Express-Power-surf.webp"
+           data-category="General"
+           data-desc="Affordable local washing powder.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Vim-Dishwash-Bar.png" alt="Safeguard Soap" loading="lazy" />
+        <h3>Vim Dishwash Bar</h3>
+        <p class="price">Rs 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Vim Dishwash Bar"
+           data-price="150"
+           data-img="images/Vim-Dishwash-Bar.png"
+           data-category="General"
+           data-desc="Lemon power dish cleaner.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Max-Dishwash-Liquid.avif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Max Dishwash Liquid</h3>
+        <p class="price">Rs 250</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Max Dishwash Liquid"
+           data-price="250"
+           data-img="images/Max-Dishwash-Liquid.avif"
+           data-category="General"
+           data-desc="Gentle yet powerful dish cleaner.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Lemon-Max-Paste.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Lemon Max Paste</h3>
+        <p class="price">Rs 220</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Lemon Max Paste"
+           data-price="220"
+           data-img="images/Lemon-Max-Paste.jfif"
+           data-category="General"
+           data-desc="Thick paste for tough grease.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Harpic-Toilet-Cleaner.avif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Harpic Toilet Cleaner</h3>
+        <p class="price">Rs 380</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Harpic Toilet Cleaner"
+           data-price="380"
+           data-img="images/Harpic-Toilet-Cleaner.avif"
+           data-category="General"
+           data-desc="Powerful toilet cleaner.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Dettol-Antiseptic-Liquid.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dettol Antiseptic Liquid</h3>
+        <p class="price">Rs 450</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dettol Antiseptic Liquid"
+           data-price="450"
+           data-img="images/Dettol-Antiseptic-Liquid.jfif"
+           data-category="General"
+           data-desc="Disinfectant for cleaning and personal hygiene.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Rose-Petal-Tissue-Box.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Rose Petal Tissue Box</h3>
+        <p class="price">Rs 350</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Rose Petal Tissue Box"
+           data-price="350"
+           data-img="images/Rose-Petal-Tissue-Box.webp"
+           data-category="General"
+           data-desc="Soft facial tissues.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Toilet-Roll-(Rose Petal).jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Toilet Roll (Rose Petal)</h3>
+        <p class="price">Rs 180</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Toilet Roll (Rose Petal)"
+           data-price="180"
+           data-img="images/Toilet-Roll-(Rose Petal).jfif"
+           data-category="General"
+           data-desc="Premium quality tissue roll.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Ponds-Cold-Cream.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Ponds Cold Cream</h3>
+        <p class="price">Rs 350</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Ponds Cold Cream"
+           data-price="350"
+           data-img="images/Ponds-Cold-Cream.webp"
+           data-category="General"
+           data-desc="Moisturizing face cream.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Nivea-Cream.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Nivea Cream (Blue Tin)</h3>
+        <p class="price">Rs 500</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Nivea Cream (Blue Tin)"
+           data-price="500"
+           data-img="images/Nivea-Cream.webp"
+           data-category="General"
+           data-desc="Deep moisture for dry skin.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Vaseline-Petroleum-Jelly.avif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Vaseline Petroleum Jelly</h3>
+        <p class="price">Rs 300</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Vaseline Petroleum Jelly"
+           data-price="300"
+           data-img="images/Vaseline-Petroleum-Jelly.avif"
+           data-category="General"
+           data-desc="Skin protection cream.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Fair-Lovely-Cream.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Fair & Lovely Cream</h3>
+        <p class="price">Rs 350</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Fair & Lovely Cream"
+           data-price="350"
+           data-img="images/Fair-Lovely-Cream.jpg"
+           data-category="General"
+           data-desc="Whitening beauty cream.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Dove-Lotion.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dove Lotion</h3>
+        <p class="price">Rs 600</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dove Lotion"
+           data-price="600"
+           data-img="images/Dove-Lotion.webp"
+           data-category="General"
+           data-desc="Nourishing body lotion.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Match-Box.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Match Box</h3>
+        <p class="price">Rs 50</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Match Box"
+           data-price="50"
+           data-img="images/Match-Box.jpg"
+           data-category="General"
+           data-desc="Local match sticks.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Candle-(Pack).jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Candle (Pack)</h3>
+        <p class="price">Rs 180</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Candle (Pack)"
+           data-price="180"
+           data-img="images/Candle-(Pack).jpg"
+           data-category="General"
+           data-desc="Wax candles for light.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/coil.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Mosquito Coil (Mortein)</h3>
+        <p class="price">Rs 280</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mosquito Coil (Mortein)"
+           data-price="280"
+           data-img="images/coil.jpg"
+           data-category="General"
+           data-desc="Repels mosquitoes.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/lotion.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Nivea Body Lotion (Smooth Sensation)</h3>
+        <p class="price">₨ ~2,200 (400 ml)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Nivea Body Lotion (Smooth Sensation)"
+           data-price="₨ ~2,200 (400 ml)"
+           data-img="images/lotion.webp"
+           data-category="General"
+           data-desc="48-hour moisture, shea butter enriched for dry skin. ">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/vaseline-lotion.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Vaseline Intensive Care Glow Lotion</h3>
+        <p class="price">₨ ~2,500-3,000/kg range (depending size)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Vaseline Intensive Care Glow Lotion"
+           data-price="₨ ~2,500-3,000/kg range (depending size)"
+           data-img="images/vaseline-lotion.jpg"
+           data-category="General"
+           data-desc="Cocoa butter + vaseline jelly, for deep nourishment & glow. ">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Hamam-Neem-soap" alt="Safeguard Soap" loading="lazy" />
+        <h3>Hamam Neem & Tulsi Soap</h3>
+        <p class="price">₨ 200</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Hamam Neem & Tulsi Soap"
+           data-price="₨ 200"
+           data-img="images/Hamam-Neem-soap"
+           data-category="General"
+           data-desc="Natural herbal cleansing bar (imported or local brand).">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Nivea-soap.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Nivea Creme Soft / Rose Care Soap</h3>
+        <p class="price">₨ 280</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Nivea Creme Soft / Rose Care Soap"
+           data-price="₨ 280"
+           data-img="images/Nivea-soap.jfif"
+           data-category="General"
+           data-desc="Gentle cleansing bar with almond oil.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/ponds-facewash.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Pond’s Pure White Face Wash</h3>
+        <p class="price">₨ 300</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Pond’s Pure White Face Wash"
+           data-price="₨ 300"
+           data-img="images/ponds-facewash.webp"
+           data-category="General"
+           data-desc="Activated charcoal blend jo impurities aur blackheads ko target karta hai.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/garnier-menfacewash.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Garnier SkinActive / Men Oil Clear Face Wash</h3>
+        <p class="price">₨ 450</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Garnier SkinActive / Men Oil Clear Face Wash"
+           data-price="₨ 300"
+           data-img="images/garnier-menfacewash.jpg"
+           data-category="General"
+           data-desc="Oily skin aur teenager feedback ke liye; mineral clay + menthol version bhi hai..">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/himaliya-faceewash.jpeg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Himalaya Purifying Neem Face Wash</h3>
+        <p class="price">₨ 350</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Himalaya Purifying Neem Face Wash"
+           data-price="₨ 350"
+           data-img="images/himaliya-faceewash.jpeg"
+           data-category="General"
+           data-desc="Neem + turmeric herbal formula, acne-prone ya oily skin ke liye popular.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/clean&clear-facewash.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Clean & Clear Foaming Facial Wash</h3>
+        <p class="price">₨ 380</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Clean & Clear Foaming Facial Wash"
+           data-price="₨ 280"
+           data-img="images/clean&clear-facewash.jpg"
+           data-category="General"
+           data-desc="Young skin, oily combination skin ke liye light foaming cleanser.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Olper’s-Milk.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Olper’s Milk</h3>
+        <p class="price">Rs. 250</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Olper’s Milk"
+           data-price="Rs. 250"
+           data-img="images/Olper’s-Milk.jfif"
+           data-category="General"
+           data-desc="Pure, thick, and creamy milk enriched with essential nutrients and vitamins. Long shelf life.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Milkpak-(Nestlé).jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Nestlé Milk</h3>
+        <p class="price">Rs. 260</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Nestlé Milk"
+           data-price="Rs. 260"
+           data-img="images/Milkpak-(Nestlé).jpg"
+           data-category="General"
+           data-desc="Premium quality UHT milk with rich taste and full cream texture. Trusted for tea and breakfast use.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Nurpur-Milk.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Nurpur Milk</h3>
+        <p class="price">Rs. 250</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Nurpur Milk"
+           data-price="Rs. 250"
+           data-img="images/Nurpur-Milk.jpg"
+           data-category="General"
+           data-desc="100% pure cow’s milk, full of calcium and protein. Popular for its natural flavor.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Dayfresh-Milk.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dayfresh Milk</h3>
+        <p class="price">Rs. 240</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dayfresh Milk"
+           data-price="Rs. 240"
+           data-img="images/Dayfresh-Milk.jpg"
+           data-category="General"
+           data-desc="Creamy and rich milk with natural goodness, sourced from local farms.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Lipton-Yellow.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Lipton Yellow Label</h3>
+        <p class="price">Rs 320 (190g pack)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Lipton Yellow Label"
+           data-price="Rs 320 (190g pack)"
+           data-img="images/Lipton-Yellow.jpg"
+           data-category="General"
+           data-desc="Pakistan ka sabse zyada bikne wala chai brand, strong flavor aur perfect color ke liye mashhoor.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Tapal-Danedar.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Tapal Danedar</h3>
+        <p class="price">Rs 350 (200g pack)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Tapal Danedar"
+           data-price="Rs 350 (200g pack)"
+           data-img="images/Tapal-Danedar.jfif"
+           data-category="General"
+           data-desc="Round granules wali premium tea; rich taste aur perfect color banati hai, har ghar ki pasandida chai.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Brooke-Bond.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Brooke Bond Supreme</h3>
+        <p class="price">Rs 340 (200g pack)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Brooke Bond Supreme"
+           data-price="Rs 340 (200g pack)"
+           data-img="images/Brooke-Bond.jpg"
+           data-category="General"
+           data-desc="Tapal ka competitor; balanced taste aur aroma ke liye mashhoor.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Vital-Tea.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Brooke Bond Supreme</h3>
+        <p class="price">Rs 300 (200g pack)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Brooke Bond Supreme"
+           data-price="Rs 300 (200g pack)"
+           data-img="images/Vital-Tea.webp"
+           data-category="General"
+           data-desc="Punjab-based brand, natural aroma aur mild strong taste ke liye mashhoor.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Kashmir-Tea.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Brooke Bond Supreme</h3>
+        <p class="price">Rs 330 (190g pack)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Brooke Bond Supreme"
+           data-price="Rs 330 (190g pack)"
+           data-img="images/Kashmir-Tea.jpg"
+           data-category="General"
+           data-desc="Kashmiri chai ke liye special leaves aur thoda salty taste; winter season me popular.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Tapal-Family.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Brooke Bond Supreme</h3>
+        <p class="price">Rs 330 (190g pack)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Brooke Bond Supreme"
+           data-price="Rs 330 (190g pack)"
+           data-img="images/Tapal-Family.webp"
+           data-category="General"
+           data-desc="Tapal ki blended variety – mild aur strong mix for family taste preference.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Tapal-Green-Tea.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Tapal Green Tea (Elaichi / Lemon)</h3>
+        <p class="price">Rs 350 (30 tea bags)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Tapal Green Tea (Elaichi / Lemon)"
+           data-price="Rs 350 (30 tea bags)"
+           data-img="images/Tapal-Green-Tea.jfif"
+           data-category="General"
+           data-desc="Green tea lovers ke liye Tapal ki variety – digestion aur freshness ke liye best.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Lipton-Green-Tea.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Lipton Green Tea (Pure / Mint / Honey Lemon)</h3>
+        <p class="price">Rs 400</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Lipton Green Tea (Pure / Mint / Honey Lemon)"
+           data-price="Rs 400"
+           data-img="images/Lipton-Green-Tea.jpg"
+           data-category="General"
+           data-desc="Wellness aur fitness lovers ke liye perfect green tea choice.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Olive-skin.jpeg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Olive Oil</h3>
+        <p class="price">Rs 850 (500ml)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Olive Oil"
+           data-price="Rs 850 (500ml)"
+           data-img="images/Olive-skin.jpeg"
+           data-category="General"
+           data-desc="Pakistan ka locally refined olive oil — cooking aur skincare dono ke liye best.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Coconut-Oil.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Coconut Oil</h3>
+        <p class="price">Rs 850 (500ml)</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Coconut Oil"
+           data-price="Rs 850 (500ml)"
+           data-img="images/Coconut-Oil.jfif"
+           data-category="General"
+           data-desc="Cold-pressed coconut oil; skin, hair, aur cooking sab ke liye suitable. Hydrating aur anti-bacterial properties ke saath.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Tomato-Ketchup.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Tomato Ketchup</h3>
+        <p class="price">Rs 359</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Tomato Ketchup"
+           data-price="Rs 359"
+           data-img="images/Tomato-Ketchup.jpg"
+           data-category="General"
+           data-desc="Pakistan ka household favourite ketchup; ripe tomatoes + mild spices, snacks & fries ke saath.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="General">
+        <img src="images/Shangrila-Tomato-Ketchup.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shangrila Tomato Ketchup</h3>
+        <p class="price">Rs 359</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shangrila Tomato Ketchup"
+           data-price="Rs 359"
+           data-img="images/Shangrila-Tomato-Ketchup.jpg"
+           data-category="General"
+           data-desc="Tomato pulp aur natural spices ka blend; table-top condiment ke liye banaya gaya.">
+           View Details
+        </a>
+      </article>
+
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-biryani.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Biryani Masala</h3>
+        <p class="price">₨ 160</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Biryani Masala"
+           data-price="₨ 160"
+           data-img="images/shan-biryani.jpg"
+           data-category="Masalay"
+           data-desc="Authentic Hyderabadi-style biryani spice mix">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-nihari.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Nihari Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Nihari Masala"
+           data-price="₨ 150"
+           data-img="images/shan-nihari.jfif"
+           data-category="Masalay"
+           data-desc="Traditional slow-cooked beef/mutton nihari blend">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-korma.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Korma Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Korma Masala"
+           data-price="₨ 150"
+           data-img="images/shan-korma.jfif"
+           data-category="Masalay"
+           data-desc="Rich Mughlai-style creamy korma spices">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-Karahi.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Karahi Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Karahi Masala"
+           data-price="₨ 150"
+           data-img="images/shan-Karahi.webp"
+           data-category="Masalay"
+           data-desc="Spicy & tangy tomato-based karahi flavor">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-haleem.png" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Haleem Masala</h3>
+        <p class="price">₨ 160</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Haleem Masala"
+           data-price="₨ 160"
+           data-img="images/shan-haleem.png"
+           data-category="Masalay"
+           data-desc="Mix for traditional haleem dish">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-tikka.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Tikka Masala</h3>
+        <p class="price">₨ 140</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Tikka Masala"
+           data-price="₨ 140"
+           data-img="images/shan-tikka.jfif"
+           data-category="Masalay"
+           data-desc="BBQ tikka spice mix for chicken or beef">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-seekh-kabab.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Seekh Kabab Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Seekh Kabab Masala"
+           data-price="₨ 150"
+           data-img="images/shan-seekh-kabab.jfif"
+           data-category="Masalay"
+           data-desc="For juicy, smoky kababs">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/shan-achar-gosht.avif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Achar Gosht Masala</h3>
+        <p class="price">₨ 120</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Achar Gosht Masala"
+           data-price="₨ 120"
+           data-img="images/shan-achar-gosht.avif"
+           data-category="Masalay"
+           data-desc="Tangy masala for fruits & snacks">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/sham-daal.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Shan Daal Masala</h3>
+        <p class="price">₨ 110</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Shan Daal Masala"
+           data-price="₨ 110"
+           data-img="images/sham-daal.jpeg"
+           data-category="Masalay"
+           data-desc="Perfect for daal fry or daal tadka">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Biryani.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Biryani Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Biryani Masala"
+           data-price="₨ 150"
+           data-img="images/National-Biryani.jpg"
+           data-category="Masalay"
+           data-desc="Rich & aromatic biryani spice mix">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Haldi-Powder.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Haldi Powder (Turmeric)</h3>
+        <p class="price">₨ 180 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Haldi Powder (Turmeric)"
+           data-price="₨ 180 / 200g"
+           data-img="images/Haldi-Powder.jpg"
+           data-category="Masalay"
+           data-desc="Natural yellow spice used for color & healing properties">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Dhaniya-Powder.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dhaniya Powder (Coriander Powder)</h3>
+        <p class="price">₨ 150 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dhaniya Powder (Coriander Powder)"
+           data-price="₨ 150 / 200g"
+           data-img="images/Dhaniya-Powder.webp"
+           data-category="Masalay"
+           data-desc="Ground coriander seeds for aroma & taste">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Laal-Mirch-Powder.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Laal Mirch Powder (Red Chili Powder)</h3>
+        <p class="price">₨ 250 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Laal Mirch Powder (Red Chili Powder)"
+           data-price="₨ 250 / 200g"
+           data-img="images/Laal-Mirch-Powder.webp"
+           data-category="Masalay"
+           data-desc="Spicy ground red chilies">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Tuti-Hui-Mirch.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Kutti Mirch (Crushed Red Chili)</h3>
+        <p class="price">₨ 240 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kutti Mirch (Crushed Red Chili)"
+           data-price="₨ 240 / 200g"
+           data-img="images/Tuti-Hui-Mirch.jpg"
+           data-category="Masalay"
+           data-desc="Semi-ground spicy chili flakes">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Garam-Masala-Powder.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Garam Masala Powder</h3>
+        <p class="price">₨ 300 / 150g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Garam Masala Powder"
+           data-price="₨ 300 / 150g"
+           data-img="images/Garam-Masala-Powder.webp"
+           data-category="Masalay"
+           data-desc="Blend of spices for rich flavor in curries">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Kali-Mirch-Powder.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Kali Mirch Powder (Black Pepper)</h3>
+        <p class="price">₨ 400 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kali Mirch Powder (Black Pepper)"
+           data-price="₨ 400 / 100g"
+           data-img="images/Kali-Mirch-Powder.jpg"
+           data-category="Masalay"
+           data-desc="Finely ground pepper for spice & aroma">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Laung-(Cloves).webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Laung (Cloves)</h3>
+        <p class="price">₨ 350 / 50g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Laung (Cloves)"
+           data-price="₨ 350 / 50g"
+           data-img="images/Laung-(Cloves).webp"
+           data-category="Masalay"
+           data-desc="Strong aroma spice used in pulao, tea & curries">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Zeera.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Zeera (Cumin Seeds)</h3>
+        <p class="price">₨ 200 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Zeera (Cumin Seeds)"
+           data-price="₨ 200 / 200g"
+           data-img="images/Zeera.jpg"
+           data-category="Masalay"
+           data-desc="Aromatic spice used in curries & rice">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Zeera-Powder.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Zeera Powder (Cumin Powder)</h3>
+        <p class="price">₨ 220 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Zeera Powder (Cumin Powder)"
+           data-price="₨ 220 / 200g"
+           data-img="images/Zeera-Powder.webp"
+           data-category="Masalay"
+           data-desc="Ground cumin for added flavor">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Kaley-Zeera.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Kaley Zeera (Black Cumin)</h3>
+        <p class="price">₨ 250 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kaley Zeera (Black Cumin)"
+           data-price="₨ 250 / 100g"
+           data-img="images/Kaley-Zeera.webp"
+           data-category="Masalay"
+           data-desc="Premium spice with strong aroma">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Ajwain.cms" alt="Safeguard Soap" loading="lazy" />
+        <h3>Ajwain (Carom Seeds)</h3>
+        <p class="price">₨ 150 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Ajwain (Carom Seeds)"
+           data-price="₨ 150 / 100g"
+           data-img="images/Ajwain.cms"
+           data-category="Masalay"
+           data-desc="Used for digestion & aroma">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Methi-Dana.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Methi Dana (Fenugreek Seeds)</h3>
+        <p class="price">₨ 120 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Methi Dana (Fenugreek Seeds)"
+           data-price="₨ 120 / 200g"
+           data-img="images/Methi-Dana.jpg"
+           data-category="Masalay"
+           data-desc="Adds bitterness & aroma in pickles">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Saunf.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Saunf (Fennel Seeds)</h3>
+        <p class="price">₨ 180 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Saunf (Fennel Seeds)"
+           data-price="₨ 180 / 200g"
+           data-img="images/Saunf.jfif"
+           data-category="Masalay"
+           data-desc="Sweet aromatic spice used in desserts & curries">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Kalonji.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Kalonji (Black Seeds)</h3>
+        <p class="price">₨ 160 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kalonji (Black Seeds)"
+           data-price="₨ 160 / 100g"
+           data-img="images/Kalonji.jpg"
+           data-category="Masalay"
+           data-desc="Used in pickles & for health benefits">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Elaichi.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Elaichi (Cardamom)</h3>
+        <p class="price">₨ 450 / 50g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Elaichi (Cardamom)"
+           data-price="₨ 450 / 50g"
+           data-img="images/Elaichi.wabp"
+           data-category="Masalay"
+           data-desc="Sweet spice used in desserts & tea">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Darchini.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Darchini (Cinnamon Sticks)</h3>
+        <p class="price">₨ 300 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Darchini (Cinnamon Sticks)"
+           data-price="₨ 300 / 100g"
+           data-img="images/Darchini.webp"
+           data-category="Masalay"
+           data-desc="Fragrant spice for flavoring food">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Tez-Patta.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Tez Patta (Bay Leaves)</h3>
+        <p class="price">₨ 100 / 20 leaves</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Tez Patta (Bay Leaves)"
+           data-price="₨ 100 / 20 leaves"
+           data-img="images/Tez-Patta.jpg"
+           data-category="Masalay"
+           data-desc="Used for aroma in rice & curries">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Sonf-Powder.avif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Sonf Powder (Fennel Powder)</h3>
+        <p class="price">₨ 180 / 200g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Sonf Powder (Fennel Powder)"
+           data-price="₨ 180 / 200g"
+           data-img="images/Sonf-Powder.avif"
+           data-category="Masalay"
+           data-desc="Sweet flavor powder for desserts">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Imli.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Imli (Tamarind)</h3>
+        <p class="price">₨ 220 / 250g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Imli (Tamarind)"
+           data-price="₨ 220 / 250g"
+           data-img="images/Imli.jpg"
+           data-category="Masalay"
+           data-desc="Used for chutneys & tangy curries">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Khus-Khus.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Khus Khus (Poppy Seeds)</h3>
+        <p class="price">₨ 420 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Khus Khus (Poppy Seeds)"
+           data-price="₨ 420 / 100g"
+           data-img="images/Khus-Khus.jpg"
+           data-category="Masalay"
+           data-desc="Soothing spice used in desserts">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Dry-Ginger-Powder.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Dry Ginger Powder (Sounth)</h3>
+        <p class="price">₨ 200 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Dry Ginger Powder (Sounth)"
+           data-price="₨ 200 / 100g"
+           data-img="images/Dry-Ginger-Powder.jpg"
+           data-category="Masalay"
+           data-desc="Used in masala chai & curries">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Star-Anise.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Star Anise (Badian)</h3>
+        <p class="price">₨ 200 / 100g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Star Anise (Badian)"
+           data-price="₨ 350 / 100g"
+           data-img="images/Star-Anise.webp"
+           data-category="Masalay"
+           data-desc="A star-shaped spice with a strong sweet-licorice flavor, used for aroma and taste in desi and Chinese dishes.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/dried-kasoori-methi.jpeg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Kasuri Methi (Dried Fenugreek Leaves)</h3>
+        <p class="price">₨ 300 / 50g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kasuri Methi (Dried Fenugreek Leaves)"
+           data-price="₨ 300 / 50g"
+           data-img="images/dried-kasoori-methi.jpeg"
+           data-category="Masalay"
+           data-desc="Dried fenugreek leaves with a slightly bitter aroma that enhances flavor in curries.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Kesar.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Kesar (Saffron)</h3>
+        <p class="price">₨ 1500 / 1g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kesar (Saffron)"
+           data-price="₨ 1500 / 1g"
+           data-img="images/Kesar.jpg"
+           data-category="Masalay"
+           data-desc="Premium spice with rich color and aroma, adds luxury to sweets and biryanis.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Hing.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Hing (Asafoetida)</h3>
+        <p class="price">₨ 400 / 50g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Hing (Asafoetida)"
+           data-price="₨ 400 / 50g"
+           data-img="images/Hing.jpg"
+           data-category="Masalay"
+           data-desc="Strong aromatic spice used in small amounts to improve digestion and flavor.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Kala-Namak.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Kala Namak (Black Salt)</h3>
+        <p class="price">₨ 200 / 250g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Kala Namak (Black Salt)"
+           data-price="₨ 200 / 250g"
+           data-img="images/Kala-Namak. wabp"
+           data-category="Masalay"
+           data-desc="Mineral-rich salt with tangy flavor and digestive properties.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Jaifal.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Jaifal (Nutmeg)</h3>
+        <p class="price">₨ 800 / 50g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Jaifal (Nutmeg)"
+           data-price="₨ 800 / 50g"
+           data-img="images/Jaifal.jpg"
+           data-category="Masalay"
+           data-desc="Strong aromatic seed used in small amounts.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Javitri.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Javitri (Mace)</h3>
+        <p class="price">₨ 900 / 50g</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Javitri (Mace)"
+           data-price="₨ 900 / 50g"
+           data-img="images/Javitri.jpg"
+           data-category="Masalay"
+           data-desc="Outer covering of nutmeg seed — aromatic.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Namak.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Namak (Iodized Salt)</h3>
+        <p class="price">₨ 120</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Namak (Iodized Salt)"
+           data-price="₨ 120"
+           data-img="images/National-Namak.webp"
+           data-category="Masalay"
+           data-desc="Refined iodized salt for everyday cooking; ensures proper iodine intake.">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Qorma.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Qorma Masala</h3>
+        <p class="price">₨ 140</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Qorma Masala"
+           data-price="₨ 140"
+           data-img="images/National-Qorma.jfif"
+           data-category="Masalay"
+           data-desc="Creamy & spicy Mughlai-style masala">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Karahi-Gosht.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Karahi Gosht Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Karahi Gosht Masala"
+           data-price="₨ 150"
+           data-img="images/National-Karahi-Gosht.jfif"
+           data-category="Masalay"
+           data-desc="For authentic Pakistani karahi">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Nihari.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Nihari Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Nihari Masala"
+           data-price="₨ 150"
+           data-img="images/National-Nihari.jfif"
+           data-category="Masalay"
+           data-desc="Deep and spicy nihari flavor">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Chana-Masala.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Chana Masala</h3>
+        <p class="price">₨ 120</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Chana Masala"
+           data-price="₨ 120"
+           data-img="images/National-Chana-Masala.jfif"
+           data-category="Masalay"
+           data-desc="For chickpea curry">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Tikka.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Tikka Masala</h3>
+        <p class="price">₨ 140</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Tikka Masala"
+           data-price="₨ 140"
+           data-img="images/National-Tikka.jfif"
+           data-category="Masalay"
+           data-desc="BBQ spice blend">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Haleem.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Haleem Masala</h3>
+        <p class="price">₨ 160</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Haleem Masala"
+           data-price="₨ 160"
+           data-img="images/National-Haleem.webp"
+           data-category="Masalay"
+           data-desc="Special mix for haleem">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Fish-Masala.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Fish Masala</h3>
+        <p class="price">₨ 120</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Fish Masala"
+           data-price="₨ 120"
+           data-img="images/National-Fish-Masala.webp"
+           data-category="Masalay"
+           data-desc="Perfect blend for fried or curry fish">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/National-Chaat.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>National Chaat Masala</h3>
+        <p class="price">₨ 120</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="National Chaat Masala"
+           data-price="₨ 120"
+           data-img="images/National-Chaat.webp"
+           data-category="Masalay"
+           data-desc="Tangy seasoning for snacks">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Mehra-Bombay-biryani.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Mehran Bombay Biryani Masala</h3>
+        <p class="price">₨ 150</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mehran Bombay Biryani Masala"
+           data-price="₨ 150"
+           data-img="images/Mehra-Bombay-biryani.jfif"
+           data-category="Masalay"
+           data-desc="Famous Karachi biryani blend">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Mehran-Tikka-Masala.webp" alt="Safeguard Soap" loading="lazy" />
+        <h3>Mehran Tikka Masala</h3>
+        <p class="price">₨ 140</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mehran Tikka Masala"
+           data-price="₨ 140"
+           data-img="images/Mehran-Tikka-Masala.webp"
+           data-category="Masalay"
+           data-desc="For perfect BBQ-style tikka">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Mehran-Qeema.jfif" alt="Safeguard Soap" loading="lazy" />
+        <h3>Mehran Qeema Masala</h3>
+        <p class="price">₨ 130</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mehran Qeema Masala"
+           data-price="₨ 130"
+           data-img="images/Mehran-Qeema.jfif"
+           data-category="Masalay"
+           data-desc="For minced meat curry">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Mehran-Pulao.jpg" alt="Safeguard Soap" loading="lazy" />
+        <h3>Mehran Pulao Masala</h3>
+        <p class="price">₨ 140</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mehran Pulao Masala"
+           data-price="₨ 140"
+           data-img="images/Mehran-Pulao.jpg"
+           data-category="Masalay"
+           data-desc="Fragrant pulao blend">
+           View Details
+        </a>
+      </article>
+
+      <article class="product-card" data-category="Masalay">
+        <img src="images/Mehran-Karahi" alt="Safeguard Soap" loading="lazy" />
+        <h3>Mehran Karahi Masala</h3>
+        <p class="price">₨ 140</p>
+        <a class="btn view-btn" 
+           href="product.html"
+           data-name="Mehran Karahi Masala"
+           data-price="₨ 140"
+           data-img="images/Mehran-Karahi"
+           data-category="Masalay"
+           data-desc="Fragrant pulao blend">
            View Details
         </a>
       </article>
@@ -243,6 +2438,15 @@
       btn.addEventListener('click', () => {
         setActiveFilter(btn.dataset.filter);
       });
+    });
+
+    // Scroll arrows for Special Products
+    const scrollContainer = document.getElementById('specialScroll');
+    document.getElementById('scrollLeft').addEventListener('click', () => {
+      scrollContainer.scrollBy({ left: -250, behavior: 'smooth' });
+    });
+    document.getElementById('scrollRight').addEventListener('click', () => {
+      scrollContainer.scrollBy({ left: 250, behavior: 'smooth' });
     });
 
     // Also support header category links
